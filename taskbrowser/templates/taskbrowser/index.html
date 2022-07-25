@@ -1,0 +1,49 @@
+{% extends "taskbrowser/layout.html" %}
+<!-- extend must be first tag -->
+{% load static %}
+
+{% block body %}
+<div id="mainSection">
+    <!-- remove google png for tasklist -->
+    <!-- <div id="image">
+        <img src="{% static 'taskbrowser/images/google-text.png' %}" alt="" />
+    </div> -->
+    <div id="taskBox">
+        <h2>Time left</h2>
+        <div id="tasklist">
+            <div id="task">
+                <form>
+                    Math HW
+                    <input type="submit" value="Extend"/>
+                    <input type="submit" value="Delete"/>
+                </form>
+            </div>
+            <div id="task">
+                <form>
+                    Brush teeth
+                    <input type="submit" value="Extend"/>
+                    <input type="submit" value="Delete"/>
+                </form>
+            </div>
+            <div id="task">
+                <form>
+                    Walk the dog
+                    <input type="submit" value="Extend"/>
+                    <input type="submit" value="Delete"/>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <form action="https://google.com/search">
+        <div id="inputField">
+            <input type="text" placeholder="Search..." name="q"/>
+        </div>
+        
+        <div id="button">
+            <input type="submit" value="Google Search" name="btnK"/>
+            <input type="submit" value="I'm Feeling Lucky" name="btnI"/>                  
+        </div>
+    </form>
+</div>
+{% endblock %}

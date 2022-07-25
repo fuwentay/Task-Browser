@@ -1,0 +1,22 @@
+{% extends "taskbrowser/layout.html" %}
+<!-- extend must be first tag -->
+{% load static %}
+
+{% block body %}
+<div id="mainSection">
+    <div id="image">
+        <img src="{% static 'taskbrowser/images/google-text.png' %}" alt="" />
+    </div>
+
+    <form action="https://google.com/images">
+        <div id="inputField">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" place holder="Search..." name="q"/>
+        </div>
+        
+        <div id="button">
+            <input type="submit" value="Image Search" />
+        </div>
+    </form>
+</div>
+{% endblock %}
