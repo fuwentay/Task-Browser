@@ -1,0 +1,175 @@
+/* no margin or padding for entire html */
+* {
+    margin: 0px;
+    padding: 0%;
+}
+
+body {
+    font-family: Arial, sans-serif
+}
+
+/* css for head (linkbar) */
+.head {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.head #links {
+    margin-right: 30px;
+    display: flex;
+}
+
+.head #links a {
+    margin-left: 30px;
+    font-size: small;
+    text-decoration: none;
+}
+
+/* when hover over link */
+.head #links a:hover {
+    border-bottom: 1px solid rgba(0,0,0,0.87);
+}
+
+/* css for mainSection (searchbox and buttons) */
+#mainSection {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+#mainSection #inputField {
+    border: 1px solid #dfe1e5;
+    height: 13px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 584px;
+}
+
+#mainSection #inputField:hover {
+    box-shadow: 0 0 5px grey;
+}
+
+#mainSection #inputField input {
+    width: 100%;
+    border: none;
+    box-shadow: none !important;
+    outline: none !important;
+    margin-left: 7px;
+}
+
+#mainSection #button {
+    display: flex;
+    justify-content: center;
+}
+
+#mainSection #button input{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    font-size: 14px;
+    margin: 20px 5px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.advancedSubHeader {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.advancedSubHeader h3 {
+    font-weight: normal;
+    margin: 20px 35px 15px;
+}
+
+.inputOne .textDesHeading {
+    font-size: 16px;
+    min-width: 167px;
+    width: 16%;
+    font-weight: 500;
+    color: #333;
+}
+
+.inputOne {
+    display: flex;
+    /* vertically aligns */
+    align-items: center;
+    max-width: 1140px;
+    min-width: 200px;
+    width: 96%;
+    margin: 40px 2% 0 45px;
+}
+
+.inputOne .textDes {
+    width: 200px;
+    font-size: 13px;
+}
+
+.inputOne .input-field {
+    min-width: 167px;
+    width: 50%;
+}
+
+.inputOne .input-field input {
+    border-radius: 1px;
+    border: 1px solid #d9d9d9;
+    font-size: 13px;
+    height: 25px;
+    padding: 1px 8px;
+    width: 100%;
+}
+
+.inputOne .toDo {
+    white-space: pre;
+    width: 32%;
+    min-width: 16px;
+    color: #555;
+    font-size: 11px;
+}
+
+span {
+    color: #666;
+    font-family: monospace;
+    font-size: 11px;
+    white-space: pre;
+}
+
+.inputOne .button {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button input {
+    background-color: #4d90fe;
+    color: #fff;
+    
+}
+
+/* Adding on tasklist */
+#taskBox {
+    border: 2px solid black;
+    height: 35%;
+    width: 584px;
+    text-align: center;
+}
+
+#tasklist {
+    border: 2px solid red;
+    width: 100%;
+    height: 75%;
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+
+#task {
+    border: 2px solid red;
+}

@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link href="{% static 'taskbrowser/styles.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <header class="head">
+            <div id="links">
+                <a href="{% url 'taskbrowser:index' %}">Google Search</a>
+                <a href="{% url 'taskbrowser:image' %}">Image Search</a>
+                <a href="{% url 'taskbrowser:advanced' %}">Advanced Search</a>
+            </div>
+        </header>
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>
