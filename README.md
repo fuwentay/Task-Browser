@@ -1,2 +1,2 @@
 # Task-Browser
-Task List integrated into a Browser with the help of Django and &lt;In Progress>
+Applying what I've learnt from CS50w to build a webapp.
